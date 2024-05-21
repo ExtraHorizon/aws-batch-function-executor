@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@aws-sdk/client-batch": "^3.577.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.3"
+  },
+  "scripts": {
+    "build": "esbuild index.js --platform=node --target=node18 --bundle --outfile=dist/index.js && cd dist && zip -r ../code.zip ."
+  }
+}
